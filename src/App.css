@@ -1,38 +1,451 @@
+body{
+
+  background-color: #f6f2b9;
+  overflow: hidden
+
+}
+
 .App {
   text-align: center;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.opis{
+
+  background-color: white;
+  border:3px solid black;
+  width:800px;
+  height:420px;
+  position:absolute;
+    left:150px;
+    top:220px;
+  overflow: hidden;
+  transition-duration:0.3s ;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.pocetnaslika{
+
+  width:95%;
+  height:80%;
+  
+  
   }
+
+  .divsalistom{
+
+    background-color: white;
+    border:3px solid black;
+    position:absolute;
+    left:1250px;
+    top:220px;
+    text-align:center; 
+    display:block;
+    padding-right:10px;
+    height: 420px;
+    transition-duration:0.3s ;
+  
+  
+  }
+
+  .divsalistom:hover{
+    box-shadow: 3px 4px 0px 0px #000;
+    transition-duration:0.1s ;
+
+  }
+
+.opis:hover{
+
+  box-shadow: 3px 4px 0px 0px #000;
+  transition-duration:0.1s ;
+
+  }
+
+  h1{
+
+    color:white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 50px;
+  }
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  background-color:black;
+  height:80px;
+  color:white;
+  width:100%;
+  margin-top:20px;
+  
+  }
+
+.link1{
+
+    position: absolute;
+    bottom: 29px;
+    left:49%;
+    z-index: 1;
+    color:white;
+    margin-left:30px;
+ 
+    
+
+
+  }
+
+.link2{
+
+  position: absolute;
+  bottom: 29px;
+  left:45%;
+  z-index: 1;
+  color:white;
+  margin-left:30px;
+}
+.link4{
+  position: absolute;
+  bottom: 29px;
+  left:42%;
+  z-index: 1;
+  color:white;
+  margin-left:30px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.kakadu{
+
+height:60%;
+width:30%;
+position:absolute;
+  left:-1%;
+  bottom:-4%;
+
+}
+
+.fischerke{
+
+height:35%;
+width:25%;
+position:absolute;
+  top:600px;
+  right:-20px;
+
+
+}
+
+.malikavez{
+height:10%;
+width:100%;
+
+}
+
+.card {
+  
+  max-width: 300px;
+  max-height:483px;
+  margin: auto;
+  text-align: center;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  position:absolute;
+    top:100px;
+    left:340px;
+    transition-duration: 0.2s;
+    background-color: white
+}
+
+.card:hover{
+  box-shadow: 3px 4px 0px 0px #000;
+  transition-duration: 0.2s;
+
+
+}
+
+.titlecard {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
   color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.ahrefdruga {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card2 {
+  
+  max-width: 300px;
+  max-height:483px;
+  margin: auto;
+  text-align: center;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  position:absolute;
+    top:100px;
+    left:790px;
+  transition-duration: 0.2s;
+  background-color: white;
+}
+.card2:hover{
+  box-shadow: 3px 4px 0px 0px #000;
+  transition-duration: 0.2s; 
+}
+
+.card3{
+  max-width: 300px;
+  max-height:483px;
+  margin: auto;
+  text-align: center;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  position:absolute;
+    top:100px;
+    left:1240px;
+  transition-duration: 0.2s;
+  background-color: white;
+  overflow: hidden;
+}
+.blokm{
+width:82%; 
+
+}
+.card3:hover{
+  transition-duration: 0.2s;
+  box-shadow: 3px 4px 0px 0px #000;
+}
+.trgovina{
+  text-align: center;
+  border:2px solid black;
+  background-color: white;
+  overflow: hidden;
+  position: absolute;
+    bottom:160px;
+    left:35%;
+  padding: 50px;
+  font-size: larger;
+  transition-duration: 0.3s;
+}
+.trgovina:hover{
+  box-shadow: 3px 4px 0px 0px #000;
+transition-duration:0.3s;
+}
+#hrana2{
+margin-left:30px;   /*da se horizontalno slazu checkboxi */
+}
+.submit{
+background-color:white;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size:40px;
+padding:18px;
+border: 4px solid black;
+cursor:pointer;
+transition-duration: 0.2s; 
+margin-left:20px;
+
+}
+.submit:hover{
+transform:scale(1.07);
+transition-duration: 0.2s;  
+}
+.containertreca{
+padding-top:56px;
+
+}
+
+.cjenik{
+text-decoration: underline;
+color:darkgray;
+font-weight: lighter;
+
+}
+
+.link3{
+  position: absolute;
+  bottom: 29px;
+  left:51.5%;
+  z-index: 1;
+  color:white;
+  margin-left:30px;
+
+
+}
+.cockatiel{
+z-index:0;
+height:38%;
+width:27%; 
+position: absolute;
+  bottom:7%;
+  left:-10%;
+}
+.btncc{
+
+max-width: 70px;  
+
+}
+
+.karta1{
+  max-width: 250px;
+  max-height:365px;
+  margin: auto;
+  text-align: center;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+  position:absolute;
+    top:300px;
+    left:140px;
+    transition-duration: 0.2s;
+    background-color: white;
+}
+.redwing{
+width:100%;
+}
+.hrefcet{
+color:plum;
+font-size: 20px; 
+}
+.karta2{
+  max-width: 250px;
+  max-height:365px;
+  margin: auto;
+  text-align: center;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+  position:absolute;
+    top:300px;
+    left:500px;
+    transition-duration: 0.2s;
+    background-color: white;
+    overflow:hidden;
+}
+.tiels{
+width:110%;
+height:10%;
+}
+.karta3{
+  max-width: 250px;
+  max-height:367px;
+  margin: auto;
+  text-align: center;
+  border:2px solid black;
+ position:absolute;
+    top:300px;
+    left:850px;
+    transition-duration: 0.2s;
+    background-color: white;
+    overflow:hidden;
+}
+.coo{
+width:105%; 
+
+}
+.karta4{
+  max-width: 250px;
+  max-height:367px;
+  margin: auto;
+  text-align: center;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+  position:absolute;
+    top:300px;
+    left:1200px;
+    transition-duration: 0.2s;
+    background-color: white;
+    overflow:hidden;
+}
+.lovebird{
+width:110%;
+
+
+}
+
+.karta5{
+  max-width: 250px;
+  max-height:367px;
+  margin: auto;
+  text-align: center;
+  border-top:2px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
+  position:absolute;
+    top:300px;
+    left:1550px;
+    transition-duration: 0.2s;
+    background-color: white;
+    overflow:hidden;
+}
+.conure{
+width:110%;  
+}
+
+.karta1:hover , .karta2:hover , .karta3:hover , .karta4:hover , .karta5:hover{
+transform: scale(1.05);
+transition-duration: 0.2s;
+}
+
+#linkovidiv{
+  margin-top:30px;
+}
+
+
+#username{
+  position:absolute;
+  top:2%;
+  left:1%;
+}
+
+
+.boxClickCss{
+
+  margin:0px auto;
+  width:130px;
+  border-radius: 10px;
+  border:2px solid black;
+  transition-duration: 2s;
+
+
+}
+
+#submittodo{
+  
+  margin:0px auto;
+  width:130px;
+  
+}
+
+ul{
+  list-style-type: none;
+}
+
+.link5{
+  position: absolute;
+  bottom: 29px;
+  left:56%;
+  z-index: 1;
+  color:white;
+  margin-left:30px;
 }
